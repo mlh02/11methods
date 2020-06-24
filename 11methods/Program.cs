@@ -6,18 +6,23 @@ namespace _11methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NumPrint(1000));
+            Console.WriteLine("Enter first Number Hint(1000)");
+            // get input
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            // get second input
+            int num2 = int.Parse(Console.ReadLine());
+            // invoke
+            NumPrint(num1, num2);
         }
-        static int NumPrint(int userNumber)
+        static void NumPrint(int num1, int num2)
         {
-            int number = 0;
-            for (int i = -1000; i <= userNumber; i++)
+            //loop through given 2 numbers
+            for (int i = num1; i >= num2 ; i--)
             {
-                number = i;
-
+                //print out numbers
+                Console.WriteLine(i);
             }
-            return number;
-   
         }
     }
 }
