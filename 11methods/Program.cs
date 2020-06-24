@@ -13,7 +13,8 @@ namespace _11methods
             int number = 0;
             for (int i = -1000; i <= userNumber; i++)
             {
-                Console.WriteLine(i);
+                number = i;
+
             }
             return number;
    
