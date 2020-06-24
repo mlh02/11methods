@@ -6,7 +6,17 @@ namespace _11methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(NumPrint(1000));
+        }
+        static int NumPrint(int userNumber)
+        {
+            int number = 0;
+            for (int i = -1000; i <= userNumber; i++)
+            {
+                Console.WriteLine(i);
+            }
+            return number;
+   
         }
     }
 }
