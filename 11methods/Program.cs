@@ -24,14 +24,18 @@ namespace _11methods
             //Console.WriteLine("choose compare second number");
             //int secondCompare = int.Parse(Console.ReadLine());
 
-            
-            Console.WriteLine("Check which number is odd or even");
+
+            //Console.WriteLine("Check which number is odd or even");
+            //int oddOrEvenNum = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Check which number is positive or negative");
             int oddOrEvenNum = int.Parse(Console.ReadLine());
 
             //NumPrint(num1, num2);
             //NumByThrees(randomsStart, randomsEnd);
             //ComapreNums(firstCompare, secondCompare);
-            OddOrEven(oddOrEvenNum);
+            //OddOrEven(oddOrEvenNum);
+            PosOrNeg(oddOrEvenNum);
         }
         static void NumPrint(int num1, int num2)
         {
@@ -54,28 +58,43 @@ namespace _11methods
             }
         static void ComapreNums(int num, int num2)
         {
-            //loop through given 2 numbers
+            //compare 2 nums
             if (num == num2)
             {
-                //print out numbers
+                //print out true
                 Console.WriteLine(true);
             }
             else
             {
+                //print out false
                 Console.WriteLine(false);
             }
         }
         static void OddOrEven(int num)
         {
-            //loop through given 2 numbers
+            //check if even
             if (num % 2 == 0)
             {
-                //print out numbers
+                //print out number if even
                 Console.WriteLine("Even");
             }
             else
             {
+                //print out if number is odd
                 Console.WriteLine("Odd");
+            }
+        }
+        static void PosOrNeg(int num)
+        {
+            //check if pos or neg
+            if (num < 0)
+            {
+                //print out even 
+                Console.WriteLine("Negative");
+            }
+            else
+            {
+                Console.WriteLine("Positive");
             }
         }
     }
