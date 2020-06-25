@@ -28,14 +28,18 @@ namespace _11methods
             //Console.WriteLine("Check which number is odd or even");
             //int oddOrEvenNum = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Check which number is positive or negative");
-            int oddOrEvenNum = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Check which number is positive or negative");
+            //int oddOrEvenNum = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter your age");
+            int age = int.Parse(Console.ReadLine());
 
             //NumPrint(num1, num2);
             //NumByThrees(randomsStart, randomsEnd);
             //ComapreNums(firstCompare, secondCompare);
             //OddOrEven(oddOrEvenNum);
-            PosOrNeg(oddOrEvenNum);
+            //PosOrNeg(oddOrEvenNum);
+            AgeVoter(age);
         }
         static void NumPrint(int num1, int num2)
         {
@@ -95,6 +99,18 @@ namespace _11methods
             else
             {
                 Console.WriteLine("Positive");
+            }
+        }
+        static void AgeVoter(int num)
+        {
+            //check old enough
+            if (num < 18)
+            { 
+                Console.WriteLine($"You're too young! Still need {18 - num} Years to go!");
+            }
+            else
+            {
+                Console.WriteLine("Hello! You can vote!");
             }
         }
     }
