@@ -19,14 +19,19 @@ namespace _11methods
             //Console.WriteLine("end number");
             //int randomsEnd = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("choose compare first number");
-            int firstCompare = int.Parse(Console.ReadLine());
-            Console.WriteLine("choose compare second number");
-            int secondCompare = int.Parse(Console.ReadLine());
+            //Console.WriteLine("choose compare first number");
+            //int firstCompare = int.Parse(Console.ReadLine());
+            //Console.WriteLine("choose compare second number");
+            //int secondCompare = int.Parse(Console.ReadLine());
+
+            
+            Console.WriteLine("Check which number is odd or even");
+            int oddOrEvenNum = int.Parse(Console.ReadLine());
 
             //NumPrint(num1, num2);
             //NumByThrees(randomsStart, randomsEnd);
-            ComapreNums(firstCompare, secondCompare);
+            //ComapreNums(firstCompare, secondCompare);
+            OddOrEven(oddOrEvenNum);
         }
         static void NumPrint(int num1, int num2)
         {
@@ -58,6 +63,19 @@ namespace _11methods
             else
             {
                 Console.WriteLine(false);
+            }
+        }
+        static void OddOrEven(int num)
+        {
+            //loop through given 2 numbers
+            if (num % 2 == 0)
+            {
+                //print out numbers
+                Console.WriteLine("Even");
+            }
+            else
+            {
+                Console.WriteLine("Odd");
             }
         }
     }
