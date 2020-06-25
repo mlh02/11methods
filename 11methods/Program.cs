@@ -19,9 +19,9 @@ namespace _11methods
             //Console.WriteLine("end number");
             //int randomsEnd = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("compare first number");
+            Console.WriteLine("choose compare first number");
             int firstCompare = int.Parse(Console.ReadLine());
-            Console.WriteLine("compare second number");
+            Console.WriteLine("choose compare second number");
             int secondCompare = int.Parse(Console.ReadLine());
 
             //NumPrint(num1, num2);
