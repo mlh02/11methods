@@ -14,13 +14,19 @@ namespace _11methods
             //int num2 = int.Parse(Console.ReadLine());
             //// invok
 
-            Console.WriteLine("start 3 number");
-            int randomsStart = int.Parse(Console.ReadLine());
-            Console.WriteLine("end number");
-            int randomsEnd = int.Parse(Console.ReadLine());
+            //Console.WriteLine("start 3 number");
+            //int randomsStart = int.Parse(Console.ReadLine());
+            //Console.WriteLine("end number");
+            //int randomsEnd = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("compare first number");
+            int firstCompare = int.Parse(Console.ReadLine());
+            Console.WriteLine("compare second number");
+            int secondCompare = int.Parse(Console.ReadLine());
 
             //NumPrint(num1, num2);
-            NumByThrees(randomsStart, randomsEnd);
+            //NumByThrees(randomsStart, randomsEnd);
+            ComapreNums(firstCompare, secondCompare);
         }
         static void NumPrint(int num1, int num2)
         {
@@ -32,7 +38,7 @@ namespace _11methods
             }
         }
 
-            static void NumByThrees(int num, int num2)
+        static void NumByThrees(int num, int num2)
             {
                 //loop through given 2 numbers
                 for (int i = num; i < num2; i = i + 3)
@@ -41,5 +47,20 @@ namespace _11methods
                     Console.WriteLine(i);
                 }
             }
+        static void ComapreNums(int num, int num2)
+        {
+            //loop through given 2 numbers
+            if (num == num2)
+            {
+                //print out numbers
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
         }
+    }
 }
+
+
