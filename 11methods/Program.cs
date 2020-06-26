@@ -31,15 +31,25 @@ namespace _11methods
             //Console.WriteLine("Check which number is positive or negative");
             //int oddOrEvenNum = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter your age");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your age");
+            //int age = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter your guess");
+            //int guess = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Number to get tables of multiples!");
+            int multiNum = int.Parse(Console.ReadLine());
+
 
             //NumPrint(num1, num2);
             //NumByThrees(randomsStart, randomsEnd);
             //ComapreNums(firstCompare, secondCompare);
             //OddOrEven(oddOrEvenNum);
             //PosOrNeg(oddOrEvenNum);
-            AgeVoter(age);
+            //AgeVoter(age);
+            //NumberPrinter(guess);
+            multi(multiNum);
         }
         static void NumPrint(int num1, int num2)
         {
@@ -111,6 +121,26 @@ namespace _11methods
             else
             {
                 Console.WriteLine("Hello! You can vote!");
+            }
+        }
+        static void NumberPrinter(int num)
+        {
+            //check IF IN RANGE enough
+            if (num < 10 && num > -10)
+            {
+                Console.WriteLine("YOURE IN RANGE!");
+            }
+            else
+            {
+                Console.WriteLine("YOURE OUT OF RANGE");
+            }
+        }
+        static void multi(int num)
+        {
+            for(int i = 0; i <= 12; i++)
+            {
+                int currMultiple = i * num;
+                Console.WriteLine(currMultiple);
             }
         }
     }
